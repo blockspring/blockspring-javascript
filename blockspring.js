@@ -1,4 +1,4 @@
-window.blockspring = (function(){
+window.blockspring = (function($){
   return blockspring = {
     getDataUri: function(file_param){
       if ("data" in file_param && "content-type" in file_param){
