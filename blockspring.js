@@ -127,7 +127,7 @@ window.blockspring = (function($){
             if((this.toType( error ) == "object") && ("title" in error)){
               request._errors.push(error);
             }
-          });
+          }.bind(this));
         }
         // Add any headers to the request object
         else if ((var_name == "_headers") && (this.toType( params[var_name] ) == "object")){
